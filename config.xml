@@ -7,6 +7,9 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
+
     <content src="index.html" />
     <access origin="*" />
+    <plugin name="cordova-plugin-inappbrowser"/>
+
 </widget>
