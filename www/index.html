@@ -25,7 +25,7 @@
         crossorigin="anonymous">
 
     <!-- Your app title -->
-    <title>Aplicativo</title>
+    <title>Smart Lock</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -58,15 +58,15 @@
 
                             <script type="text/javascript">
                                 function funfun() {
-                                    let URL_TO_FETCH = 'https://enchantingveneratedobjects--five-nine.repl.co'
-                                    fetch(URL_TO_FETCH)
+                                    let url_to_fetch = 'https://Server-TCC--marcossouza3.repl.co'
+                                    fetch(url_to_fetch)
                                         .then(function (response) {
                                             let resp = response.text()
+                                            console.log(response)
                                             resp.then(e=>{
-                                                let tt = $('#tt').append('>>>'+ e)
+                                                let tt = $('#tt').append('>'+ e + '<')
                                                 console.log(e);
                                             })
-                                            
                                         })
                                         .catch(function (err) {
                                             console.error('Failed retrieving information', err);
