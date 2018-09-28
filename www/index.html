@@ -50,34 +50,19 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <button class="btn btn-default orange-circle-button" id="btnopen"> ABRIR V.2 <span class="orange-circle-greater-than"></span></button>
-                            <button onclick="funfun()"> ABRIR V.3 </button>
-                            <div id="tt"></div>
-                            <a href="#" onclick="window.open('http://www.kidzout.com', '_system');">www.kidzout.com</a>
-
+                            <button onclick="reqpost() "class="btn btn-default orange-circle-button" id="btnopen"> ABRIR V.2 <span class="orange-circle-greater-than"></span></button>
                             <script type="text/javascript">
-                                function funfun() {
+                                function reqpost() {
                                     let url_to_fetch = 'https://Server-TCC--marcossouza3.repl.co'
                                     fetch(url_to_fetch)
                                         .then(function (response) {
                                             let resp = response.text()
                                             console.log(response)
-                                            resp.then(e=>{
-                                                let tt = $('#tt').append('>'+ e + '<')
-                                                console.log(e);
                                             })
-                                        })
+
                                         .catch(function (err) {
                                             console.error('Failed retrieving information', err);
                                         });
-                                }
-                                var btnopen = document.getElementById('btnopen');
-                                btnopen.onclick = function () {
-                                    var script = document.createElement("script");
-                                    script.type = "text/javascript";
-                                    script.src = "js/bundle.js";
-                                    document.getElementsByTagName("head")[0].appendChild(script);
-                                    return false;
                                 }
                             </script>
                         </div>
