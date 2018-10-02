@@ -40,7 +40,7 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Smart Lock</div>
+                    <div class="centersliding">Smart Lock</div>
                 </div>
             </div>
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -50,7 +50,9 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <button onclick="reqpost() "class="btn btn-default orange-circle-button" id="btnopen"> ABRIR V.2 <span class="orange-circle-greater-than"></span></button>
+                            <div class="container">
+                                <button class="instant-button" onclick="reqpost()"> ABRIR </button>
+                            </div>
                             <script type="text/javascript">
                                 function reqpost() {
                                     let url_to_fetch = 'https://Server-TCC--marcossouza3.repl.co'
