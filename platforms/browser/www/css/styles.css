@@ -1,46 +1,37 @@
-/*
-   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
-   statusbar plugin is added, it also adds default setting to make the content white via:
-
-       <preference name="StatusBarStyle" value="lightcontent"/>
-
-   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
-   in the config.xml file and will be added by the CLI when you build locally.
-
-   See https://github.com/apache/cordova-plugin-statusbar
-
-
-.statusbar-overlay {
-    background: #000000;
-}
-*/
-
-.orange-circle-button {
-	box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
-	border: .5em solid #E84D0E;
-	font-size: 1em;
-	line-height: 1.1em;
-	color: #ffffff;
-	background-color: #e84d0e;
+.centersliding {
+	color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	margin: auto;
-	border-radius: 50%;
-	height: 7em;
-	width: 7em;
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
 }
-.orange-circle-button:hover {
-	color:#ffffff;
-    background-color: #e84d0e;
-	text-decoration: none;
-	border-color: #ff7536;
-	
+
+body {
+	background: #1a1a1a;
 }
-.orange-circle-button:visited {
-	color:#ffffff;
-    background-color: #e84d0e;
-	text-decoration: none;
-	
+.container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.orange-circle-link-greater-than {
-    font-size: 1em;
+.instant-button {
+	color: white;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	background: radial-gradient(#900 15%, #e60000 55%, red 55%, #000 100%);
+	border: 10px solid #900;
+	border-radius: 70px;
 }
